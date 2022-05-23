@@ -3,6 +3,7 @@
 #include <random>
 #include <set>
 #include <cmath>
+#include <algorithm>
 #include <fstream>
 
 #include "Point.h"
