@@ -25,12 +25,14 @@ QuadEqu resEqu;
 int main(int argc, char** argv)
 {
     setUp(argv[1]);
+    /*
     for(Point& p : points)
     {
         p.print();
     }
+    */
     randomFit();
-    bestEqu.print();
+    //bestEqu.print();
     leastSqrFit();
     resEqu.print();
 
