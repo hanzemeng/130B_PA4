@@ -8,7 +8,7 @@
 
 #include "Point.h"
 using namespace std;
-
+// home-made 3 by 3 matrix solver using Cramer's rule
 struct DetIsZero{};
 double findDet(vector<vector<double>>& M);
 vector<double> solveY(vector<vector<double>>& M, vector<double>& y);
@@ -25,14 +25,14 @@ QuadEqu resEqu;
 int main(int argc, char** argv)
 {
     setUp(argv[1]);
-    /*
+    /* remove the comment if you want to see the points
     for(Point& p : points)
     {
         p.print();
     }
     */
     randomFit();
-    //bestEqu.print();
+    //bestEqu.print(); // remove the comment for the equation produced by the random algorithm
     leastSqrFit();
     resEqu.print();
 
@@ -103,7 +103,7 @@ void randomFit()
             errors[i] = newEqu.distanceAbs(points[i]);
         }
         sort(errors.begin(), errors.end());
-        double newMedian = errors[(3+errors.size())/2];
+        double newMedian = errors[(3+errors.size())/2]; // +3 because 3 points are used to find the equation
         if(newMedian < bestMedian)
         {
             bestMedian = newMedian;
