@@ -5,4 +5,4 @@
 4. Type make clean to remove object files and prog4
 
 # Note on Randomized Algorithm
-Because the first part of the program randomly chooses 3 points, there is a 1 percent chance that the resulting equation accounted for an outlier. If this unlikly event happens, simply re-run the program to get a better equation.
+Because the first part of the program randomly chooses 3 points, there is a 1 percent chance that the resulting equation accounted for an outlier. If this unlikely event happens, simply re-run the program to get a better equation.
